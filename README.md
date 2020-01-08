@@ -1,17 +1,17 @@
 # googForm-Instant-Runoff
-Instant Runoff Script for use in Goog Forms response sheets
+[Instant Runoff Voting](https://en.wikipedia.org/wiki/Instant-runoff_voting) script for drop-in use in Goog Forms response sheets.
 
 ![Example](form.png)
 
 1. Make a Google Form vote grid like above. 
 1. Set it to require a response in each row, and
 1. Limit to one response per column.
-1. Get your peeps to rate their choices!
-1. Once they do, open the responses spreadsheet and go to Tools > Script Editor.
+1. Get your peeps to vote by rating their choices!
+1. Once they do, open the responses spreadsheet and go to `Tools > Script Editor.`
 1. Paste the contents of `instantRunoff.gs` into your local script, save and close the Script Editor.
 1. Somewhere on the right side of the responses spreadsheet, paste into a cell:
 
-     =instantRunoff(cellRange,inPercent)
+     ```=instantRunoff(cellRange,inPercent)```
 
 `cellRange` is something like `$H$2:K`
 
